@@ -5,5 +5,5 @@ from app.models.chromebooks_model import *
 router = APIRouter()
 
 @router.post("/chrome")
-def create_chrome(chrome:ChromeBookModel):
+def create_chrome(chrome: ChromeBookModel):
     return create_service(chrome)
