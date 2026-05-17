@@ -1,5 +1,5 @@
-chrome_list = []
+from app.db.db_connection import chrome_collection
 
 def create_chrome_repository(chrome: dict):
-    chrome_list.append(chrome)
+    return chrome_collection.insert_one(chrome)
     
